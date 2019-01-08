@@ -3,6 +3,24 @@ body {
 
 }
 
+img {
+    display: block; 
+    margin-top: auto;
+    margin-left: -40%; 
+    margin-right: auto; 
+    width:150%; 
+    height: 100%;
+    transition: filter .5s ease-in-out;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+img:hover{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+
 #grid {
     position: relative;
     width: 80%;
