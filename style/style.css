@@ -20,7 +20,6 @@ img:hover{
     filter: grayscale(0%);
 }
 
-
 #grid {
     position: relative;
     width: 80%;
@@ -50,6 +49,32 @@ img:hover{
     width: 100%;
     height: 100%;
     background: #1695A3; /* #00bcd4; */
+    -o-transform: skewY(-30deg) rotate(60deg);
+    -moz-transform: skewY(-30deg) rotate(60deg);
+    -webkit-transform: skewY(-30deg) rotate(60deg);
+    -ms-transform: skewY(-30deg) rotate(60deg);
+    transform: skewY(-30deg) rotate(60deg);
+    overflow: hidden;
+}
+
+#minigrid {
+    position: relative;
+    width: 120%;
+    margin: 0 auto;
+    padding: 0; /* Clears unordered list default of 40px */
+}
+
+#minigrid li .hexagon{
+    background: #F3FFe2;
+}
+
+#minigrid li .hidden1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1695A3;
     -o-transform: skewY(-30deg) rotate(60deg);
     -moz-transform: skewY(-30deg) rotate(60deg);
     -webkit-transform: skewY(-30deg) rotate(60deg);
@@ -95,7 +120,7 @@ img:hover{
     transform: translateX(50%) rotate(-60deg) skewY(30deg);
 }
 
-p {
+h1 {
     font-family: 'Alegreya Sans SC', sans-serif;
     font-weight: bolder;
     font-size: 5rem;
