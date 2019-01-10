@@ -3,16 +3,33 @@ body {
 
 }
 
-img {
+img{    
     display: block; 
+    transition: filter .2s ease-in-out;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+}
+
+img.lin{
+    width: 120%;
+    height: 100%;
+
+}
+
+img.git{
+    margin-left: -10%;
+    width: 120%;
+    height: 100%;
+
+}
+
+img.garrosh {
     margin-top: auto;
     margin-left: -40%; 
     margin-right: auto; 
-    width:150%; 
+    width:150%;
     height: 100%;
-    transition: filter .5s ease-in-out;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
 }
 
 img:hover{
@@ -22,7 +39,7 @@ img:hover{
 
 #grid {
     position: relative;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     padding: 0; /* Clears unordered list default of 40px */
 }
@@ -59,7 +76,7 @@ img:hover{
 
 #minigrid {
     position: relative;
-    width: 120%;
+    width: 100%;
     margin: 0 auto;
     padding: 0; /* Clears unordered list default of 40px */
 }
